@@ -124,9 +124,9 @@
             // 
             // pxFoto
             // 
-            this.pxFoto.Location = new System.Drawing.Point(265, 15);
+            this.pxFoto.Location = new System.Drawing.Point(240, 15);
             this.pxFoto.Name = "pxFoto";
-            this.pxFoto.Size = new System.Drawing.Size(143, 270);
+            this.pxFoto.Size = new System.Drawing.Size(168, 259);
             this.pxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pxFoto.TabIndex = 4;
             this.pxFoto.TabStop = false;
@@ -191,6 +191,7 @@
             this.btnConfirma.TabIndex = 12;
             this.btnConfirma.Text = "CONFIRMAR";
             this.btnConfirma.UseVisualStyleBackColor = false;
+            this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click);
             // 
             // button12
             // 
@@ -201,6 +202,7 @@
             this.button12.TabIndex = 11;
             this.button12.Text = "CORRIGE";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -210,6 +212,7 @@
             this.button11.TabIndex = 10;
             this.button11.Text = "BRANCO";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // btn0
             // 
