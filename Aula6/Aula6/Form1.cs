@@ -20,8 +20,7 @@ namespace Aula6
         string numero = "";
         Candidato alguem;
         Candidato[] lista = new Candidato[4];
-        int eleitores = 0, branco = 0, nulo = 0;
-        
+        int branco = 0, nulo = 0;
         
         private void insereCandidato()
         {
@@ -148,25 +147,13 @@ namespace Aula6
                         valido = 1;
                     }
                 }
-            }
-            
+
+            } 
+           
                 if (valido == 0)
                 {
                     nulo++;
                 }
-            
-
-            eleitores++;
-            corrige();
-            if (eleitores == 9)
-            {
-                string texto = "Nulo =" + nulo + "\nBranco= " + branco;
-                for (int i = 0; i < 4; i++)
-                {
-                    texto += "\n" + lista[i].Nome + "=" + lista[i].Voto;
-                }
-                MessageBox.Show(texto);
-            }
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -176,7 +163,7 @@ namespace Aula6
             lblMensagem.Visible = true;
             btnConfirma.Enabled = true;
             lblCandidato.Text = "VOTO EM BRANCO";
-            
+          
 
         }
         private void corrige()
@@ -191,7 +178,7 @@ namespace Aula6
             pxFoto.Image  = null;
 
         }
-        
+       
         private void button12_Click(object sender, EventArgs e)
         {
             corrige();
